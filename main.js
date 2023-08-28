@@ -10799,10 +10799,14 @@ var burger_bodyScrollLock = __webpack_require__(509);
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var lang = btn.dataset.lang;
+
+        /* HERE SHOULD BE YOUR PATHS */
+        /* PATHS BELOW FOR DEMO */
+
         if (lang === 'ar') {
-          window.location.pathname = '/ar.html';
+          window.location.pathname = 'circle-demo/ar.html';
         } else if (lang === 'eng') {
-          window.location.pathname = "/index.html";
+          window.location.pathname = "/circle-demo/index.html";
         }
       });
     });
