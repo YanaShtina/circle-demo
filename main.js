@@ -1621,8 +1621,8 @@ var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./src/modules/scrollTo.js
 var bodyScrollLock = __webpack_require__(509);
-// const disableBodyScroll = bodyScrollLock.disableBodyScroll;
-var enableBodyScroll = bodyScrollLock.enableBodyScroll;
+/* const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+const enableBodyScroll = bodyScrollLock.enableBodyScroll; */
 /* harmony default export */ var scrollTo = ({
   scroll: function scroll() {
     var links = document.querySelectorAll('.js-scroll');
@@ -1639,7 +1639,7 @@ var enableBodyScroll = bodyScrollLock.enableBodyScroll;
         burger.classList.remove('active');
         nav.classList.remove('active');
         body.classList.remove('active');
-        enableBodyScroll(targetElement);
+        /*     enableBodyScroll(targetElement);  */
         topOffset = 50;
 
         // const topOffset = 0; // если не нужен отступ сверху 
@@ -10773,8 +10773,6 @@ function EffectCards({
 });
 ;// CONCATENATED MODULE: ./src/modules/burger.js
 var burger_bodyScrollLock = __webpack_require__(509);
-var disableBodyScroll = burger_bodyScrollLock.disableBodyScroll;
-var burger_enableBodyScroll = burger_bodyScrollLock.enableBodyScroll;
 /* harmony default export */ var burger = ({
   init: function init() {
     var burger = document.querySelector('.burger');
@@ -10784,13 +10782,10 @@ var burger_enableBodyScroll = burger_bodyScrollLock.enableBodyScroll;
       if (burger.classList.contains('active')) {
         burger.classList.remove('active');
         body.classList.remove('active');
-        /*   enableBodyScroll(nav); */
       } else {
         burger.classList.add('active');
         body.classList.add('active');
-        /* disableBodyScroll(nav); */
       }
-
       nav.classList.toggle('active');
     });
   }
@@ -10799,7 +10794,8 @@ var burger_enableBodyScroll = burger_bodyScrollLock.enableBodyScroll;
 /* harmony default export */ var lang = ({
   init: function init() {
     var btns = document.querySelectorAll('.js-lang');
-    console.log('window', window.location, window.location.pathname);
+    /*     console.log('window', window.location,  window.location.pathname) */
+
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var lang = btn.dataset.lang;
