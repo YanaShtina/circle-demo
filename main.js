@@ -10804,9 +10804,9 @@ var burger_enableBodyScroll = burger_bodyScrollLock.enableBodyScroll;
       btn.addEventListener('click', function () {
         var lang = btn.dataset.lang;
         if (lang === 'ar') {
-          window.location.pathname = window.location.pathname + 'ar.html';
+          window.location.pathname = '/circle-demo/ar.html';
         } else if (lang === 'eng') {
-          window.location.pathname = window.location.pathname + 'index.html';
+          window.location.pathname = '/circle-demo/index.html';
         }
       });
     });
