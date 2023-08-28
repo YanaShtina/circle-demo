@@ -10799,13 +10799,14 @@ var burger_enableBodyScroll = burger_bodyScrollLock.enableBodyScroll;
 /* harmony default export */ var lang = ({
   init: function init() {
     var btns = document.querySelectorAll('.js-lang');
+    console.log('window', window.location, window.location.pathname);
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var lang = btn.dataset.lang;
         if (lang === 'ar') {
-          window.location.pathname = "ar.html";
+          window.location.pathname = '/circle-demo//ar.html';
         } else if (lang === 'eng') {
-          window.location.pathname = "/";
+          window.location.pathname = '/circle-demo//index.html';
         }
       });
     });
